@@ -1,2 +1,11 @@
 # Swift.__GB__
-introduccion
+borrar gabrielbrufau borrar gabrielbrufau borrar gabrielbrufau borrar
+*introduccion*
+
+*instalacion*
+- developer.apple.com `log in`
+- xcode
+
+*configuracion*
+
+*uso*

@@ -1,12 +1,16 @@
 # Swift.__GB__ (nivel basico)
+
 <br/>
-niveles de programacion
-basico desde 8kyu a 7kyu
-medio  desde 6kyu a 5kyu
-alto   desde 4kyu a 3kyu
-expert 2kyu  
-semidios 1kyu
+
+- niveles de programacion
+- basico desde 8kyu a 7kyu
+- medio  desde 6kyu a 5kyu
+- alto   desde 4kyu a 3kyu
+- expert 2kyu  
+- challenger 1kyu
+- 
 <br/>
+
 *init from ubuntu with docker*
 - <a href="https://hub.docker.com/_/swift">imagen oficial de swift en dockerhub</a>
 - tener en cuanta cada vez que corramos la imagen `sudo docker start swiftQUKI``sudo docker attach swiftQUKI`

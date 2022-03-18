@@ -1,0 +1,70 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "swiftCommands" : {
+    "C.exe-02-debug.module" : {
+      "executable" : "/usr/bin/swiftc",
+      "importPath" : "/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/GIT/Swift.__GB__/training/exe-02/Sources/exe-02/main.swift"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "exe_02",
+      "moduleOutputPath" : "/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/exe_02.swiftmodule",
+      "objects" : [
+        "/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/exe_02.build/main.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-swift-version",
+        "5",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-g",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "exe_02_main",
+        "-color-diagnostics"
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/exe_02.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/exe_02.swiftmodule"
+        }
+      ],
+      "sources" : [
+        "/GIT/Swift.__GB__/training/exe-02/Sources/exe-02/main.swift"
+      ],
+      "tempsPath" : "/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/exe_02.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "testDiscoveryCommands" : {
+
+  }
+}

@@ -1,0 +1,61 @@
+client:
+  name: basic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "exe-02-debug.exe": ["<exe-02-debug.exe>"]
+  "exe-02-debug.module": ["<exe-02-debug.module>"]
+  "main": ["<exe-02-debug.exe>","<exe-02-debug.module>"]
+  "test": ["<exe-02-debug.exe>","<exe-02-debug.module>"]
+default: "main"
+nodes:
+  "/GIT/Swift.__GB__/training/exe-02/Sources/exe-02/":
+    is-directory-structure: true
+commands:
+  "/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/exe_02.build/exe_02.swiftmodule.o":
+    tool: shell
+    inputs: ["/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/exe_02.swiftmodule"]
+    outputs: ["/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/exe_02.build/exe_02.swiftmodule.o"]
+    description: "Wrapping AST for exe-02 for debugging"
+    args: ["/usr/bin/swiftc","-modulewrap","/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/exe_02.swiftmodule","-o","/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/exe_02.build/exe_02.swiftmodule.o","-target","x86_64-unknown-linux-gnu"]
+
+  "<exe-02-debug.exe>":
+    tool: phony
+    inputs: ["/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/exe-02"]
+    outputs: ["<exe-02-debug.exe>"]
+
+  "<exe-02-debug.module>":
+    tool: phony
+    inputs: ["/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/exe_02.build/main.swift.o","/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/exe_02.swiftmodule"]
+    outputs: ["<exe-02-debug.module>"]
+
+  "C.exe-02-debug.exe":
+    tool: shell
+    inputs: ["/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/exe_02.build/exe_02.swiftmodule.o","/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/exe_02.build/main.swift.o"]
+    outputs: ["/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/exe-02"]
+    description: "Linking ./.build/x86_64-unknown-linux-gnu/debug/exe-02"
+    args: ["/usr/bin/swiftc","-L","/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug","-o","/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/exe-02","-module-name","exe_02","-emit-executable","-Xlinker","--defsym","-Xlinker","main=exe_02_main","-Xlinker","-rpath=$ORIGIN","@/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/exe-02.product/Objects.LinkFileList","-target","x86_64-unknown-linux-gnu","-L","/usr/lib"]
+
+  "C.exe-02-debug.module":
+    tool: swift-compiler
+    inputs: ["/GIT/Swift.__GB__/training/exe-02/Sources/exe-02/main.swift"]
+    outputs: ["/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/exe_02.build/main.swift.o","/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/exe_02.swiftmodule"]
+    executable: "/usr/bin/swiftc"
+    module-name: "exe_02"
+    module-output-path: "/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/exe_02.swiftmodule"
+    import-paths: ["/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug"]
+    temps-path: "/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/exe_02.build"
+    objects: ["/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/exe_02.build/main.swift.o"]
+    other-args: ["-target","x86_64-unknown-linux-gnu","-swift-version","5","-enable-batch-mode","-index-store-path","/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/index/store","-Onone","-enable-testing","-g","-j4","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","exe_02_main","-color-diagnostics"]
+    sources: ["/GIT/Swift.__GB__/training/exe-02/Sources/exe-02/main.swift"]
+    is-library: false
+    enable-whole-module-optimization: false
+    num-threads: 4
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/GIT/Swift.__GB__/training/exe-02/Sources/exe-02/","/GIT/Swift.__GB__/training/exe-02/Package.swift","/GIT/Swift.__GB__/training/exe-02/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

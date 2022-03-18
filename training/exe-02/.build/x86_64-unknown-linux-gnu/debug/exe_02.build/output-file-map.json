@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/exe_02.build/master.swiftdeps"
+  },
+  "/GIT/Swift.__GB__/training/exe-02/Sources/exe-02/main.swift": {
+    "dependencies": "/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/exe_02.build/main.d",
+    "object": "/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/exe_02.build/main.swift.o",
+    "swiftmodule": "/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/exe_02.build/main~partial.swiftmodule",
+    "swift-dependencies": "/GIT/Swift.__GB__/training/exe-02/.build/x86_64-unknown-linux-gnu/debug/exe_02.build/main.swiftdeps"
+  }
+}

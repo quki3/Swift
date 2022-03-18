@@ -1,0 +1,6 @@
+version: "Swift version 5.5.3 (swift-5.5.3-RELEASE)"
+options: "8ef5046fbbd1600d3acfa786da61fd8406f925629add4420526302146e4e0aa2"
+build_start_time: [1647320566, 834447860]
+build_end_time: [1647320570, 769578933]
+inputs:
+  "/GIT/Swift.__GB__/training/exe-02/Sources/exe-02/main.swift": [1647231560, 63415527]

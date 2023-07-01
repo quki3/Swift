@@ -21,3 +21,5 @@ wiki, <a href="https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html">d
 ## doc
 wiki,doc
 ## challenges 
+1. 1/
+   - a/ create new player, your <a href="https://developer.apple.com/swift/">doc.</a>

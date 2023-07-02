@@ -23,3 +23,4 @@ wiki,doc
 ## challenges 
 1. 1/
    - a/ create a hello worl <a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/guidedtour/">doc.</a>
+   - b/ include values in strings

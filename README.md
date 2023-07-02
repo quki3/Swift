@@ -1,8 +1,8 @@
 # swift
-`last update`
+`last update jul 02 2023`
 ## welcome
 ## Introduction 
-wiki, <a href="https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html">doc</a>
+wiki, <a href="https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html">doc</a>, <a href="https://www.swift.org/getting-started/">web oficial</a>
 ### init from ubuntu with docker
 
 - <a href="https://hub.docker.com/_/swift">imagen oficial de swift en dockerhub</a>
@@ -22,4 +22,4 @@ wiki, <a href="https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html">d
 wiki,doc
 ## challenges 
 1. 1/
-   - a/ create new player, your <a href="https://developer.apple.com/swift/">doc.</a>
+   - a/ create a hello worl <a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/guidedtour/">doc.</a>
